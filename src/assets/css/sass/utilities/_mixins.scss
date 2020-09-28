@@ -1,3 +1,74 @@
 /* ---------------------------------------------------------------------------------------
   Mixins
  * --------------------------------------------------------------------------------------*/
+/*-------------- Responsive --------------*/
+@mixin desktop1-fhd-1920 {
+	@media (max-width: 1920px) {
+		@content;
+	}
+}
+@mixin desktop2-hd-plus-1600 {
+	@media (max-width: 1600px) {
+		@content;
+	}
+}
+@mixin desktop3-hd3-1440 {
+	@media (max-width: 1440px) {
+		@content;
+	}
+}
+@mixin desktop4-hd2-1366 {
+	@media (max-width: 1366px) {
+		@content;
+	}
+}
+@mixin desktop5-hd1-1280 {
+	@media (max-width: 1280px) {
+		@content;
+	}
+}
+@mixin desktop-1024 {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+@mixin tablet1-768 {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+@mixin tablet2-720 {
+	@media (max-width: 720px) {
+		@content;
+	}
+}
+@mixin mobile1-480 {
+	@media (max-width: 480px) {
+		@content;
+	}
+}
+@mixin mobile2-425 {
+	@media (max-width: 425px) {
+		@content;
+	}
+}
+@mixin mobile3-414 {
+	@media (max-width: 414px) {
+		@content;
+	}
+}
+@mixin mobile4-375 {
+	@media (max-width: 375px) {
+		@content;
+	}
+}
+@mixin mobile5-360 {
+	@media (max-width: 360px) {
+		@content;
+	}
+}
+@mixin mobile6-320 {
+	@media (max-width: 320px) {
+		@content;
+	}
+}

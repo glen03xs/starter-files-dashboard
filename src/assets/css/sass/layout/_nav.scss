@@ -1,7 +1,130 @@
- /* ---------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------
   Nav Styles
  * --------------------------------------------------------------------------------------*/
 
+.main-sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 280px;
 
+	&--wrapper {
+		border-right: 1px solid #dbdbdb;
+		position: relative;
+		height: 100%;
+		margin: 0;
+		padding-bottom: 1.875rem;
+		background-color: #222c3c;
+		overflow: auto;
+		z-index: 10;
+	}
+}
 
+.sidebar-header {
+	background-color: #f8f9fc;
+	border-bottom: 1px solid #dbdbdb;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	padding: 0 16px;
 
+	img {
+		width: 100%;
+	}
+}
+
+.menu-item {
+	color: #b7c0cd;
+
+	h4 {
+		color: #7f8fa4;
+		font-size: 1.25rem;
+		margin-left: 0;
+		padding-left: 14px;
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		height: 42px;
+		padding-left: 28px;
+
+		&.active {
+			background: #1d2531;
+			box-shadow: inset 3px 0 0 0 #00a8ff;
+			position: relative;
+			position: relative;
+
+			&::after {
+				left: 93%;
+				top: 50%;
+				border: solid transparent;
+				content: ' ';
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+			}
+
+			&::after {
+				border-color: rgba(255, 255, 255, 0);
+				border-right-color: #ffffff;
+				border-width: 10px;
+				transform: translateY(-50%);
+				z-index: 999;
+			}
+		}
+
+		&:hover {
+			background: #1d2531;
+			box-shadow: inset 3px 0 0 0 #00a8ff;
+		}
+
+		p,
+		h4 {
+			color: #b7c0cd;
+			margin-bottom: 0;
+			margin-left: 6px;
+		}
+	}
+}
+
+.menu-item-dashboard {
+	margin-bottom: 20px;
+
+	h4 {
+		margin-bottom: 0;
+		font-size: 1rem;
+		padding-left: 0;
+	}
+}
+.dashboard-main-menu-item {
+	// &:target .sub-menu {
+	// 	max-height: 500px;
+	// }
+
+	.sub-menu {
+		background: #39414e;
+		padding: 6px 0;
+		// max-height: 0; for update
+
+		a {
+			color: #909aa5;
+			height: 24px;
+			font-size: 15px;
+			margin-left: 44px;
+			padding-left: 12px;
+
+			&:hover {
+				background: transparent;
+			}
+		}
+	}
+}
+.dashboard-menu {
+	padding: 20px 0;
+}

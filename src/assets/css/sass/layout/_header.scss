@@ -1,3 +1,125 @@
 /*---------------------------------------------------------------------------------------
   Header Styles
  * --------------------------------------------------------------------------------------*/
+.main-content-header {
+	height: 100px;
+
+	&--top {
+		height: 60px;
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+		border-bottom: 1px solid #dbdbdb;
+
+		&__left-wrap {
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			&-min-btn {
+				display: none;
+				position: absolute;
+
+				button {
+					outline: none;
+				}
+			}
+
+			&-search-bar {
+				margin-left: 10px;
+				position: relative;
+				width: 300px;
+
+				.header-search-field {
+					border: 1px solid #dfe3e9;
+					border-radius: 4px;
+					font-size: 0.85rem;
+					height: 40px;
+					width: 100%;
+					background-color: #fff;
+					color: #354052;
+					padding: 8px 34px 8px 14px;
+					outline: none;
+				}
+
+				.header-btn-search {
+					background: transparent;
+					right: 6px;
+					border: none;
+					font-size: 18px;
+					color: #ced0da;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					transition: all 0.2s ease-in;
+
+					&:hover {
+						color: #6d6e71;
+					}
+				}
+			}
+		}
+
+		&__right-wrap {
+			display: flex;
+			align-items: center;
+
+			&-profile {
+				margin: 0 8px;
+
+				.profile-img {
+					padding: 8px;
+
+					img {
+						height: 34px;
+						width: auto;
+					}
+				}
+			}
+
+			&-icon {
+				padding: 6px;
+				display: flex;
+				align-items: center;
+
+				img {
+					height: 20px;
+					width: 20px;
+				}
+			}
+		}
+	}
+
+	&--bottom {
+		padding: 4px 10px;
+		height: 40px;
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+		border-bottom: 1px solid #000;
+
+		&__breadcrumb-wrap {
+			display: flex;
+			align-content: center;
+
+			ul {
+				display: flex;
+				list-style: none;
+				margin-left: 10px;
+				margin-bottom: 0;
+				padding-left: 0;
+
+				li {
+					line-height: 30px;
+
+					&::after {
+						content: '\f107';
+						display: block;
+						color: #7f8fa4;
+						font-family: FontAwesome;
+					}
+				}
+			}
+		}
+	}
+}

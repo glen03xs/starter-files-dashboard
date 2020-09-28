@@ -11,112 +11,133 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!--Stylesheets-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body>
 		<div class="main-container">
 			<div class="main-sidebar">
-				<div class="sidebar-header">
-					<h1>Logo</h1>
-				</div>
-				<div class="dashboard-menu">
-					<div class="menu-item">
-						<span>
-							<img src="assets/img/dashboard.svg" class="menu-icon" alt="" />
-							<h4>Dashboard</h4>
-						</span>
+				<div class="main-sidebar--wrapper">
+					<div class="sidebar-header">
+						<a href="#">
+							<img src="assets/img/logo.png" alt="" class="site-logo" />
+						</a>
 					</div>
-					<div class="menu-item">
-						<h4>Office</h4>
-						<ul>
-							<li>
-								<a href="#">
-									<img src="assets/img/group.svg" class="menu-icon" alt="" />
-									<p>Employee Database</p>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="assets/img/window.svg" class="menu-icon" alt="" />
-									<p>Trip Record</p>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="assets/img/barcode.svg" class="menu-icon" alt="" />
-									<p>Office Inventory</p>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="assets/img/calendar.svg" class="menu-icon" alt="" />
-									<p>Timesheet</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="menu-item">
-						<h4>Motorpool</h4>
-						<ul>
-							<li>
-								<a href="#">
-									<img src="assets/img/clutch.svg" class="menu-icon" alt="" />
-									<p>Parts Inventory</p>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img
-										src="assets/img/oil-barrel.svg"
-										class="menu-icon"
-										alt=""
-									/>
-									<p>Lubricants Inventory</p>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img
-										src="assets/img/gas-station.svg"
-										class="menu-icon"
-										alt=""
-									/>
-									<p>Diesel Tracker</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="menu-item">
-						<h4>Truck / Equipment</h4>
-						<ul>
-							<li>
-								<a href="#">
-									<img
-										src="assets/img/nine-black-tiles.svg"
-										class="menu-icon"
-										alt=""
-									/>
-									<p>Record / Inventory</p>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img
-										src="assets/img/dump-truck.svg"
-										class="menu-icon"
-										alt=""
-									/>
-									<p>Truck Monitoring</p>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="assets/img/work.svg" class="menu-icon" alt="" />
-									<p>Equipment Monitoring</p>
-								</a>
-							</li>
-						</ul>
+					<div class="dashboard-menu">
+						<div class="menu-item menu-item-dashboard">
+							<a class="active" href="#">
+								<img src="assets/img/dashboard.svg" class="menu-icon" alt="" />
+								<h4>Dashboard</h4>
+							</a>
+						</div>
+						<div class="menu-item">
+							<h4>Office</h4>
+							<ul>
+								<li class="dashboard-main-menu-item">
+									<a href="#">
+										<img src="assets/img/group.svg" class="menu-icon" alt="" />
+										<p>Employee Database</p>
+									</a>
+									<ul class="sub-menu">
+										<li><a href="#">Add Person</a></li>
+										<li><a href="#">Edit Person</a></li>
+										<li><a href="#">View All</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										<img src="assets/img/window.svg" class="menu-icon" alt="" />
+										<p>Trip Record</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="assets/img/barcode.svg"
+											class="menu-icon"
+											alt=""
+										/>
+										<p>Office Inventory</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="assets/img/calendar.svg"
+											class="menu-icon"
+											alt=""
+										/>
+										<p>Timesheet</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-item">
+							<h4>Motorpool</h4>
+							<ul>
+								<li>
+									<a href="#">
+										<img src="assets/img/clutch.svg" class="menu-icon" alt="" />
+										<p>Parts Inventory</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="assets/img/oil-barrel.svg"
+											class="menu-icon"
+											alt=""
+										/>
+										<p>Lubricants Inventory</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="assets/img/gas-station.svg"
+											class="menu-icon"
+											alt=""
+										/>
+										<p>Diesel Tracker</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-item">
+							<h4>Truck / Equipment</h4>
+							<ul>
+								<li>
+									<a href="#">
+										<img
+											src="assets/img/nine-black-tiles.svg"
+											class="menu-icon"
+											alt=""
+										/>
+										<p>Record / Inventory</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="assets/img/dump-truck.svg"
+											class="menu-icon"
+											alt=""
+										/>
+										<p>Truck Monitoring</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="assets/img/work.svg" class="menu-icon" alt="" />
+										<p>Equipment Monitoring</p>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -124,19 +145,37 @@
 				<div class="main-content-header">
 					<div class="main-content-header--top">
 						<div class="main-content-header--top__left-wrap">
-							<div class="main-content-header--top__search-bar">
-								<input type="text" />
-								<button><i class="fa fa-search"></i></button>
-							</div>
-							<div class="main-content-header--top__min-btn">
+							<div class="main-content-header--top__left-wrap-min-btn">
 								<button><i class="fa fa-chevron-left"></i></button>
 							</div>
+							<div class="main-content-header--top__left-wrap-search-bar">
+								<button class="header-btn-search">
+									<i class="fa fa-search"></i>
+								</button>
+								<input type="text" class="header-search-field" />
+							</div>
 						</div>
-						<div class="main-content-header--top__left-wrap">
-							<div class="main-content-header--top__profile-wrap-area">
+						<div class="main-content-header--top__right-wrap">
+							<div class="main-content-header--top__right-wrap-notification">
+								<a
+									href="#"
+									class="main-content-header--top__right-wrap-icon header-notification-icon"
+								>
+									<img src="assets/img/reorder-option.svg" alt="" />
+								</a>
+							</div>
+							<div class="main-content-header--top__right-wrap-profile">
 								<a href="#" class="profile-img">
 									<img src="assets/img/profile-img.png" alt="" />
 									<span>Account Name</span>
+								</a>
+							</div>
+							<div class="main-content-header--top__right-wrap-notification">
+								<a
+									href="#"
+									class="main-content-header--top__right-wrap-icon header-sign-out-icon"
+								>
+									<img src="assets/img/sign-out-option.svg" alt="" />
 								</a>
 							</div>
 						</div>
