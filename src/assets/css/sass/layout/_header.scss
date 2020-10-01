@@ -2,10 +2,10 @@
   Header Styles
  * --------------------------------------------------------------------------------------*/
 .main-content-header {
+	background: #fff;
 	height: 100px;
-	box-shadow: 0 2px 2px 0 rgba(60, 75, 100, 0.14),
-		0 3px 1px -2px rgba(60, 75, 100, 0.12), 0 1px 5px 0 rgba(60, 75, 100, 0.2);
-	position: relative;
+	position: fixed;
+	width: calc(100% - 280px);
 
 	&--top {
 		height: 60px;
@@ -102,6 +102,8 @@
 		display: flex;
 		align-content: center;
 		justify-content: space-between;
+		box-shadow: 0 2px 2px 0 rgba(60, 75, 100, 0.14),
+			0 3px 1px -2px rgba(60, 75, 100, 0.12), 0 1px 5px 0 rgba(60, 75, 100, 0.2);
 
 		&__breadcrumb-wrap {
 			display: flex;
@@ -120,13 +122,15 @@
 					position: relative;
 
 					&::after {
-						content: '\f054';
+						content: '/';
 						display: block;
 						color: #7f8fa4;
 						font-family: FontAwesome;
 						position: absolute;
 						top: 0;
 						right: -18px;
+						font-size: 24px;
+						margin-right: 2px;
 					}
 
 					&:last-child:after {
