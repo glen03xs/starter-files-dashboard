@@ -8,6 +8,11 @@
 	bottom: 0;
 	width: 280px;
 
+	p,
+	a {
+		font-family: $font-1;
+	}
+
 	&--wrapper {
 		border-right: 1px solid #dbdbdb;
 		position: relative;

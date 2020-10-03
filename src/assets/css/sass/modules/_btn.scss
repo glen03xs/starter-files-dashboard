@@ -5,3 +5,23 @@
 .btn {
 
 }
+
+.btn-search {
+	background: transparent;
+	right: 6px;
+	border: none;
+	font-size: 18px;
+	color: #ced0da;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		color: #6d6e71;
+	}
+}
+
+.btn-search-emp-database	{
+
+}

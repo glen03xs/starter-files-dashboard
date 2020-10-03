@@ -1,0 +1,126 @@
+.employee-database {
+
+	&--search-wrap {
+		width: 100%;
+		position: relative;
+	}
+
+	&--profile-list-wrap {
+		height: calc(100vh - 280px);
+		overflow: auto;
+		margin: 20px 0;
+
+		div:first-child {
+			padding-top: 0;
+			border-top: 0;
+		}
+		div:last-child {
+			padding-bottom: 0;
+			border-bottom: 0;
+		}
+	}
+
+	&--profile-item {
+		padding: 26px;
+		border-top: 1px solid #d8dbe0;
+
+		&__head {
+			border-bottom: 1px solid #d8dbe0;
+			display: flex;
+			flex-wrap: wrap;
+			padding-bottom: 10px;
+			position: relative;
+
+			.profile-item {
+
+				&--img-wrap {
+					padding: 0 14px;
+					width: 30%;
+
+					img {
+						border-radius: 50%;
+					}
+				}
+
+				&--primary-details {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					width: 70%;
+
+					p {
+						margin: 0;
+					}
+
+					&__emp-no {
+						color: #a1a1a1;
+
+						font-weight: 500;
+					}
+					&__name {
+						font-size: 20px;
+						padding-top: 2px;
+					}
+				}
+
+				&--btn-edit {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+			}
+		}
+
+		&__body {
+			padding-top: 10px;
+
+			.profile-item {
+
+				&--secondary-details-wrap {
+					display: flex;
+					flex-wrap: wrap;
+					position: relative;
+
+					p {
+						margin: 3px;
+					}
+				}
+
+				&--secondary-details-info-title {
+					width: 35%;
+
+					p {
+						font-weight: 600;
+					}
+				}
+				&--secondary-details-info-value {
+					width: 65%;
+
+					&__address {
+						min-height: 63px;
+					}
+				}
+
+				&--secondary-details-btn-wrap {
+					position: absolute;
+					bottom: 6px;
+					left: 2px;
+
+					.profile-item__btn-view {
+						color: #fff;
+						background: #1478D3;
+						font-size: .90rem;
+						padding: 6px 12px;
+
+						&:hover {
+							background: #1262ac;
+							transition: all 0.2s ease-in;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+

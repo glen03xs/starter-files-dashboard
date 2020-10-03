@@ -33,33 +33,6 @@
 				position: relative;
 				width: 300px;
 
-				.header-search-field {
-					border: 1px solid #dfe3e9;
-					border-radius: 4px;
-					font-size: 0.85rem;
-					height: 40px;
-					width: 100%;
-					background-color: #fff;
-					color: #354052;
-					padding: 8px 34px 8px 14px;
-					outline: none;
-				}
-
-				.header-btn-search {
-					background: transparent;
-					right: 6px;
-					border: none;
-					font-size: 18px;
-					color: #ced0da;
-					position: absolute;
-					top: 50%;
-					transform: translateY(-50%);
-					transition: all 0.2s ease-in;
-
-					&:hover {
-						color: #6d6e71;
-					}
-				}
 			}
 		}
 
@@ -108,6 +81,7 @@
 		&__breadcrumb-wrap {
 			display: flex;
 			align-content: center;
+			font-family: $font-1;
 
 			ul {
 				display: flex;

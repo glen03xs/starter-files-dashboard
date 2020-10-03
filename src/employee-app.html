@@ -1,248 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="x-ua-compatible" content="ie=edge" />
-		<title></title>
-		<meta name="description" content="" />
-		<meta name="author" content="Glen Nepomuceno" />
 
-		<!--Mobile Specific Meta-->
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<title></title>
+	<meta name="description" content="" />
+	<meta name="author" content="Glen Nepomuceno" />
 
-		<!--Stylesheets-->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
-	</head>
+	<!--Mobile Specific Meta-->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<body>
-		<div class="main-container">
-			<div class="main-sidebar">
-				<div class="main-sidebar--wrapper">
-					<div class="sidebar-header">
-						<a href="#">
-							<img src="assets/img/logo.png" alt="" class="site-logo" />
+	<!--Stylesheets-->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+		rel="stylesheet" />
+	<link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="main-sidebar">
+			<div class="main-sidebar--wrapper">
+				<div class="sidebar-header">
+					<a href="#">
+						<img src="assets/img/logo.png" alt="" class="site-logo" />
+					</a>
+				</div>
+				<div class="dashboard-menu">
+					<div class="menu-item menu-item-dashboard">
+						<a class="active" href="index.html">
+							<img src="assets/img/dashboard.svg" class="menu-icon" alt="" />
+							<h4>Dashboard</h4>
 						</a>
 					</div>
-					<div class="dashboard-menu">
-						<div class="menu-item menu-item-dashboard">
-							<a class="active" href="index.html">
-								<img src="assets/img/dashboard.svg" class="menu-icon" alt="" />
-								<h4>Dashboard</h4>
+					<div class="menu-item">
+						<h4>Office</h4>
+						<ul>
+							<li class="dashboard-main-menu-item">
+								<a href="employee-app.html">
+									<img src="assets/img/group.svg" class="menu-icon" alt="" />
+									<p>Employee Database</p>
+								</a>
+								<ul class="sub-menu">
+									<li><a href="#">Add Person</a></li>
+									<li><a href="#">Edit Person</a></li>
+									<li><a href="#">View All</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/window.svg" class="menu-icon" alt="" />
+									<p>Trip Record</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/barcode.svg" class="menu-icon" alt="" />
+									<p>Office Inventory</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/calendar.svg" class="menu-icon" alt="" />
+									<p>Timesheet</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-item">
+						<h4>Motorpool</h4>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="assets/img/clutch.svg" class="menu-icon" alt="" />
+									<p>Parts Inventory</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/oil-barrel.svg" class="menu-icon" alt="" />
+									<p>Lubricants Inventory</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/gas-station.svg" class="menu-icon" alt="" />
+									<p>Diesel Tracker</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-item">
+						<h4>Truck / Equipment</h4>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="assets/img/nine-black-tiles.svg" class="menu-icon" alt="" />
+									<p>Record / Inventory</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/dump-truck.svg" class="menu-icon" alt="" />
+									<p>Truck Monitoring</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/work.svg" class="menu-icon" alt="" />
+									<p>Equipment Monitoring</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="main-content-header">
+				<div class="main-content-header--top">
+					<div class="main-content-header--top__left-wrap">
+						<div class="main-content-header--top__left-wrap-min-btn">
+							<button><i class="fa fa-chevron-left"></i></button>
+						</div>
+						<div class="main-content-header--top__left-wrap-search-bar">
+							<button class="btn-search">
+								<i class="fa fa-search"></i>
+							</button>
+							<input type="text" class="search-field" />
+						</div>
+					</div>
+					<div class="main-content-header--top__right-wrap">
+						<div class="main-content-header--top__right-wrap-notification">
+							<a href="#" class="main-content-header--top__right-wrap-icon header-notification-icon">
+								<img src="assets/img/reorder-option.svg" alt="" />
 							</a>
 						</div>
-						<div class="menu-item">
-							<h4>Office</h4>
-							<ul>
-								<li class="dashboard-main-menu-item">
-									<a href="employee-app.html">
-										<img src="assets/img/group.svg" class="menu-icon" alt="" />
-										<p>Employee Database</p>
-									</a>
-									<ul class="sub-menu">
-										<li><a href="#">Add Person</a></li>
-										<li><a href="#">Edit Person</a></li>
-										<li><a href="#">View All</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">
-										<img src="assets/img/window.svg" class="menu-icon" alt="" />
-										<p>Trip Record</p>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img
-											src="assets/img/barcode.svg"
-											class="menu-icon"
-											alt=""
-										/>
-										<p>Office Inventory</p>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img
-											src="assets/img/calendar.svg"
-											class="menu-icon"
-											alt=""
-										/>
-										<p>Timesheet</p>
-									</a>
-								</li>
-							</ul>
+						<div class="main-content-header--top__right-wrap-profile">
+							<a href="#" class="profile-img">
+								<img src="assets/img/profile-img.png" alt="" />
+								<span>Account Name</span>
+							</a>
 						</div>
-						<div class="menu-item">
-							<h4>Motorpool</h4>
-							<ul>
-								<li>
-									<a href="#">
-										<img src="assets/img/clutch.svg" class="menu-icon" alt="" />
-										<p>Parts Inventory</p>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img
-											src="assets/img/oil-barrel.svg"
-											class="menu-icon"
-											alt=""
-										/>
-										<p>Lubricants Inventory</p>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img
-											src="assets/img/gas-station.svg"
-											class="menu-icon"
-											alt=""
-										/>
-										<p>Diesel Tracker</p>
-									</a>
-								</li>
-							</ul>
+						<div class="main-content-header--top__right-wrap-notification">
+							<a href="#" class="main-content-header--top__right-wrap-icon header-sign-out-icon">
+								<img src="assets/img/sign-out-option.svg" alt="" />
+							</a>
 						</div>
-						<div class="menu-item">
-							<h4>Truck / Equipment</h4>
-							<ul>
-								<li>
-									<a href="#">
-										<img
-											src="assets/img/nine-black-tiles.svg"
-											class="menu-icon"
-											alt=""
-										/>
-										<p>Record / Inventory</p>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img
-											src="assets/img/dump-truck.svg"
-											class="menu-icon"
-											alt=""
-										/>
-										<p>Truck Monitoring</p>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="assets/img/work.svg" class="menu-icon" alt="" />
-										<p>Equipment Monitoring</p>
-									</a>
-								</li>
-							</ul>
+					</div>
+				</div>
+				<div class="main-content-header--bottom">
+					<div class="main-content-header--bottom__breadcrumb-wrap">
+						<ul>
+							<li><a href="index.html"> Dashboard</a></li>
+							<li>Employee Database</li>
+						</ul>
+					</div>
+					<div class="main-content-header--bottom__setttings-wrap">
+						<div class="main-content-header--bottom__settings">
+							<button>
+								<img src="assets/img/cog-wheel.svg" class="menu-icon" alt="" />
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="main-content">
-				<div class="main-content-header">
-					<div class="main-content-header--top">
-						<div class="main-content-header--top__left-wrap">
-							<div class="main-content-header--top__left-wrap-min-btn">
-								<button><i class="fa fa-chevron-left"></i></button>
-							</div>
-							<div class="main-content-header--top__left-wrap-search-bar">
-								<button class="header-btn-search">
-									<i class="fa fa-search"></i>
-								</button>
-								<input type="text" class="header-search-field" />
-							</div>
-						</div>
-						<div class="main-content-header--top__right-wrap">
-							<div class="main-content-header--top__right-wrap-notification">
-								<a
-									href="#"
-									class="main-content-header--top__right-wrap-icon header-notification-icon"
-								>
-									<img src="assets/img/reorder-option.svg" alt="" />
-								</a>
-							</div>
-							<div class="main-content-header--top__right-wrap-profile">
-								<a href="#" class="profile-img">
-									<img src="assets/img/profile-img.png" alt="" />
-									<span>Account Name</span>
-								</a>
-							</div>
-							<div class="main-content-header--top__right-wrap-notification">
-								<a
-									href="#"
-									class="main-content-header--top__right-wrap-icon header-sign-out-icon"
-								>
-									<img src="assets/img/sign-out-option.svg" alt="" />
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="main-content-header--bottom">
-						<div class="main-content-header--bottom__breadcrumb-wrap">
-							<ul>
-								<li><a href="index.html"> Dashboard</a></li>
-								<li>Employee Database</li>
-							</ul>
-						</div>
-						<div class="main-content-header--bottom__setttings-wrap">
-							<div class="main-content-header--bottom__settings">
-								<button>
-									<img
-										src="assets/img/cog-wheel.svg"
-										class="menu-icon"
-										alt=""
-									/>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="content-area">
-					<div class="content-area--main-wrap">
-						<div class="content-area--container-fluid">
-							<div class="row">
-								<div class="col-md-8">
-									<div class="card">
-										<div class="card--header">
-											<h3 class="card--header__title-md">Card Title</h3>
-										</div>
-										<div class="card--body">
-											<p>
-												Lorem Ipsum is simply dummy text of the printing and
-												typesetting industry. Lorem Ipsum has been the
-												industry's standard dummy text ever since the 1500s,
-												when an unknown printer took a galley of type and
-												scrambled it to make a type specimen book. It has
-												survived not only five centuries, but also the leap into
-												electronic typesetting, remaining essentially unchanged.
-												It was popularised in the 1960s with the release of
-												Letraset sheets containing Lorem Ipsum passages, and
-												more recently with desktop publishing software like
-												Aldus PageMaker including versions of Lorem Ipsum.
-											</p>
-										</div>
+			<div class="content-area">
+				<div class="content-area--main-wrap">
+					<div class="content-area--container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<div class="card">
+									<div class="card--header">
+										<h3 class="card--header__title-md">Card Title</h3>
+									</div>
+									<div class="card--body">
+										<p>
+											Lorem Ipsum is simply dummy text of the printing and
+											typesetting industry. Lorem Ipsum has been the
+											industry's standard dummy text ever since the 1500s,
+											when an unknown printer took a galley of type and
+											scrambled it to make a type specimen book. It has
+											survived not only five centuries, but also the leap into
+											electronic typesetting, remaining essentially unchanged.
+											It was popularised in the 1960s with the release of
+											Letraset sheets containing Lorem Ipsum passages, and
+											more recently with desktop publishing software like
+											Aldus PageMaker including versions of Lorem Ipsum.
+										</p>
 									</div>
 								</div>
-								<div class="col-md-4">
-									<div class="card">
-										<div class="card--header">Card Title</div>
-										<div class="card--body">
-											<p>
-												Lorem Ipsum is simply dummy text of the printing and
-												typesetting industry. Lorem Ipsum has been the
-												industry's standard dummy text ever since the 1500s,
-												when an unknown printer took a galley of type and
-												scrambled it to make a type specimen book. It has
-												survived not only five centuries, but also the leap into
-												electronic typesetting, remaining essentially unchanged.
-												It was popularised in the 1960s with the release of
-												Letraset sheets containing Lorem Ipsum passages, and
-												more recently with desktop publishing software like
-												Aldus PageMaker including versions of Lorem Ipsum.
-											</p>
+							</div>
+							<div class="col-md-4">
+								<div class="card">
+									<div class="card--body card--body-hr-2">
+										<div class="employee-database--search-wrap">
+											<button class="btn-search btn-search-emp-database">
+												<i class="fa fa-search"></i>
+											</button>
+											<input type="text" class="search-field" />
+										</div>
+									</div>
+									<div class="card--body__no-pd">
+										<div class="employee-database--profile-list-wrap">
+											<div class="employee-database--profile-item">
+												<div class="employee-database--profile-item__head">
+													<div class="profile-item--img-wrap">
+														<img src="assets/img/emp-thumb.jpg" class="profile-item--img-wrap__img">
+													</div>
+													<div class="profile-item--primary-details">
+														<p class="profile-item--primary-details__emp-no">1000103</p>
+														<a href="#">
+															<p class="profile-item--primary-details__name">Jill Johnson</p>
+														</a>
+														<p class="profile-item--primary-details__position">Secretary</p>
+													</div>
+													<a href="#" class="profile-item--btn-edit">Edit</a>
+												</div>
+												<div class="employee-database--profile-item__body">
+													<div class="profile-item--secondary-details-wrap">
+														<div class="profile-item--secondary-details-info-title">
+															<p class="profile-item--secondary-details-info-title__contact-no">Contact No.:</p>
+															<p class="profile-item--secondary-details-info-title__email-address">Email Address:</p>
+															<p class="profile-item--secondary-details-info-title__address">Address:</p>
+														</div>
+														<div class="profile-item--secondary-details-info-value">
+															<p class="profile-item--secondary-details-info-value__contact-no">09454699046</p>
+															<p class="profile-item--secondary-details-info-value__email-address">jill@gmail.com</p>
+															<p class="profile-item--secondary-details-info-value__address">123 Ave St. Brgy Tagay,
+																Tungkong Mangga, City of San Jose del Monte, Bulacan</p>
+														</div>
+														<div class="profile-item--secondary-details-btn-wrap">
+															<a href="#" class="profile-item__btn-view">View</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="employee-database--profile-item">
+												<div class="employee-database--profile-item__head">
+													<div class="profile-item--img-wrap">
+														<img src="assets/img/emp-thumb.jpg" class="profile-item--img-wrap__img">
+													</div>
+													<div class="profile-item--primary-details">
+														<p class="profile-item--primary-details__emp-no">1000103</p>
+														<a href="#">
+															<p class="profile-item--primary-details__name">Jill Johnson</p>
+														</a>
+														<p class="profile-item--primary-details__position">Secretary</p>
+													</div>
+													<a href="#" class="profile-item--btn-edit">Edit</a>
+												</div>
+												<div class="employee-database--profile-item__body">
+													<div class="profile-item--secondary-details-wrap">
+														<div class="profile-item--secondary-details-info-title">
+															<p class="profile-item--secondary-details-info-title__contact-no">Contact No.:</p>
+															<p class="profile-item--secondary-details-info-title__email-address">Email Address:</p>
+															<p class="profile-item--secondary-details-info-title__address">Address:</p>
+														</div>
+														<div class="profile-item--secondary-details-info-value">
+															<p class="profile-item--secondary-details-info-value__contact-no">09454699046</p>
+															<p class="profile-item--secondary-details-info-value__email-address">jill@gmail.com</p>
+															<p class="profile-item--secondary-details-info-value__address">123 Ave St. Brgy Tagay,
+																Tungkong Mangga, City of San Jose del Monte, Bulacan</p>
+														</div>
+														<div class="profile-item--secondary-details-btn-wrap">
+															<a href="#" class="profile-item__btn-view">View</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="employee-database--profile-item">
+												<div class="employee-database--profile-item__head">
+													<div class="profile-item--img-wrap">
+														<img src="assets/img/emp-thumb.jpg" class="profile-item--img-wrap__img">
+													</div>
+													<div class="profile-item--primary-details">
+														<p class="profile-item--primary-details__emp-no">1000103</p>
+														<a href="#">
+															<p class="profile-item--primary-details__name">Jill Johnson</p>
+														</a>
+														<p class="profile-item--primary-details__position">Secretary</p>
+													</div>
+													<a href="#" class="profile-item--btn-edit">Edit</a>
+												</div>
+												<div class="employee-database--profile-item__body">
+													<div class="profile-item--secondary-details-wrap">
+														<div class="profile-item--secondary-details-info-title">
+															<p class="profile-item--secondary-details-info-title__contact-no">Contact No.:</p>
+															<p class="profile-item--secondary-details-info-title__email-address">Email Address:</p>
+															<p class="profile-item--secondary-details-info-title__address">Address:</p>
+														</div>
+														<div class="profile-item--secondary-details-info-value">
+															<p class="profile-item--secondary-details-info-value__contact-no">09454699046</p>
+															<p class="profile-item--secondary-details-info-value__email-address">jill@gmail.com</p>
+															<p class="profile-item--secondary-details-info-value__address">123 Ave St. Brgy Tagay,
+																Tungkong Mangga, City of San Jose del Monte, Bulacan</p>
+														</div>
+														<div class="profile-item--secondary-details-btn-wrap">
+															<a href="#" class="profile-item__btn-view">View</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="employee-database--profile-item">
+												<div class="employee-database--profile-item__head">
+													<div class="profile-item--img-wrap">
+														<img src="assets/img/emp-thumb.jpg" class="profile-item--img-wrap__img">
+													</div>
+													<div class="profile-item--primary-details">
+														<p class="profile-item--primary-details__emp-no">1000103</p>
+														<a href="#">
+															<p class="profile-item--primary-details__name">Jill Johnson</p>
+														</a>
+														<p class="profile-item--primary-details__position">Secretary</p>
+													</div>
+													<a href="#" class="profile-item--btn-edit">Edit</a>
+												</div>
+												<div class="employee-database--profile-item__body">
+													<div class="profile-item--secondary-details-wrap">
+														<div class="profile-item--secondary-details-info-title">
+															<p class="profile-item--secondary-details-info-title__contact-no">Contact No.:</p>
+															<p class="profile-item--secondary-details-info-title__email-address">Email Address:</p>
+															<p class="profile-item--secondary-details-info-title__address">Address:</p>
+														</div>
+														<div class="profile-item--secondary-details-info-value">
+															<p class="profile-item--secondary-details-info-value__contact-no">09454699046</p>
+															<p class="profile-item--secondary-details-info-value__email-address">jill@gmail.com</p>
+															<p class="profile-item--secondary-details-info-value__address">123 Ave St. Brgy Tagay,
+																Tungkong Mangga, City of San Jose del Monte, Bulacan</p>
+														</div>
+														<div class="profile-item--secondary-details-btn-wrap">
+															<a href="#" class="profile-item__btn-view">View</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="employee-database--profile-item">
+												<div class="employee-database--profile-item__head">
+													<div class="profile-item--img-wrap">
+														<img src="assets/img/emp-thumb.jpg" class="profile-item--img-wrap__img">
+													</div>
+													<div class="profile-item--primary-details">
+														<p class="profile-item--primary-details__emp-no">1000103</p>
+														<a href="#">
+															<p class="profile-item--primary-details__name">Jill Johnson</p>
+														</a>
+														<p class="profile-item--primary-details__position">Secretary</p>
+													</div>
+													<a href="#" class="profile-item--btn-edit">Edit</a>
+												</div>
+												<div class="employee-database--profile-item__body">
+													<div class="profile-item--secondary-details-wrap">
+														<div class="profile-item--secondary-details-info-title">
+															<p class="profile-item--secondary-details-info-title__contact-no">Contact No.:</p>
+															<p class="profile-item--secondary-details-info-title__email-address">Email Address:</p>
+															<p class="profile-item--secondary-details-info-title__address">Address:</p>
+														</div>
+														<div class="profile-item--secondary-details-info-value">
+															<p class="profile-item--secondary-details-info-value__contact-no">09454699046</p>
+															<p class="profile-item--secondary-details-info-value__email-address">jill@gmail.com</p>
+															<p class="profile-item--secondary-details-info-value__address">123 Ave St. Brgy Tagay,
+																Tungkong Mangga, City of San Jose del Monte, Bulacan</p>
+														</div>
+														<div class="profile-item--secondary-details-btn-wrap">
+															<a href="#" class="profile-item__btn-view">View</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
 										</div>
 									</div>
 								</div>
@@ -254,5 +381,6 @@
 		</div>
 		<!-- JavaScript -->
 		<script src=""></script>
-	</body>
+</body>
+
 </html>

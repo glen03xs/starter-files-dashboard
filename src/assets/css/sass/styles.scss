@@ -19,12 +19,13 @@ Ver: 1.0 \ Author URI: glennepomuceno.com
 @import 'layout/base';
 @import 'layout/nav';
 @import 'layout/header';
-@import 'layout/dashboard';
 @import 'layout/main';
 // @import 'layout/footer';
 // @import 'layout/sidebar';
 
 /*-------------- Pages --------------*/
+@import 'pages/dashboard';
+@import 'pages/employee-databse';
 // @import 'pages/about';
 // @import 'pages/blog';
 // @import 'pages/contact';
@@ -37,7 +38,7 @@ Ver: 1.0 \ Author URI: glennepomuceno.com
 /*-------------- Modules --------------*/
 @import 'modules/btn';
 // @import 'modules/dividers';
-// @import 'modules/forms';
+@import 'modules/forms';
 @import 'modules/headline';
 @import 'modules/hero';
 // @import 'modules/tables';
