@@ -15,12 +15,19 @@
 }
 
 body {
-	font-family: $font-2;
 	color: #333;
+	font-family: $font-2;
+	font-size: 1rem;
+  font-weight: 400;
+	margin: 0;
+	text-align: left;
+  background-color: #fff;
 }
 
 a {
 	color: $color-link;
+	text-decoration: none;
+    background-color: transparent;
 
 	&:hover {
 		color: $color-link-hover;
@@ -29,6 +36,16 @@ a {
 }
 
 /*-------------- Typography --------------*/
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
 /** Heading **/
 h1,
 h2,
@@ -82,6 +99,17 @@ p {
 }
 
 img {
+	vertical-align: middle;
+    border-style: none;
 	max-width: 100%;
 	height: auto;
+}
+
+ol, ul, dl {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+ol ol, ul ul, ol ul, ul ol {
+	margin-bottom: 0;
 }

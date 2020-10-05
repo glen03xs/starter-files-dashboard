@@ -159,7 +159,7 @@
 					</div>
 					<div class="main-content-header--bottom__setttings-wrap">
 						<div class="main-content-header--bottom__settings">
-							<button>
+							<button class="btn-header-settings">
 								<img src="assets/img/cog-wheel.svg" class="menu-icon" alt="" />
 							</button>
 						</div>
@@ -172,23 +172,51 @@
 						<div class="row">
 							<div class="col-md-8">
 								<div class="card">
-									<div class="card--header">
-										<h3 class="card--header__title-md">Card Title</h3>
-									</div>
-									<div class="card--body">
-										<p>
-											Lorem Ipsum is simply dummy text of the printing and
-											typesetting industry. Lorem Ipsum has been the
-											industry's standard dummy text ever since the 1500s,
-											when an unknown printer took a galley of type and
-											scrambled it to make a type specimen book. It has
-											survived not only five centuries, but also the leap into
-											electronic typesetting, remaining essentially unchanged.
-											It was popularised in the 1960s with the release of
-											Letraset sheets containing Lorem Ipsum passages, and
-											more recently with desktop publishing software like
-											Aldus PageMaker including versions of Lorem Ipsum.
-										</p>
+									<div class="employee-database--main">
+										<div class="card--header">
+											<h3 class="card--header__title-md">Add Employee</h3>
+										</div>
+										<div class="card--body">
+											<div class="employee-database--main__profile-id-name-wrap">
+												<div class="profile-pic-upload">
+													<label for="" class="profile-pic-upload--label">Profile Picture</label>
+													<div class="profile-pic-upload--input">
+														<div class="profile-pic-upload--input__preview">
+														</div>
+														<label for="profile-pic-upload-btn" class="profile-pic-upload--input__upload">
+															<i class="fa fa-pencil"></i>
+															<input type="file" name="profile-avatar" id="profile-pic-upload-btn"
+																accept=".png, .jpg, jpeg" />
+															<input type="hidden" name="profile-avatar-remove">
+														</label>
+													</div>
+												</div>
+												<div class="name-emp-no">
+													<div class="name-emp-no--form-group form-group-inline">
+														<label for="" class="name-emp-no--form-group__label .emp-no-label">Employee Id:</label>
+														<input type="number" class="name-emp-no--form-group__field form-control" />
+													</div>
+													<div class="name-emp-no--form-group form-group-inline">
+														<label for="" class="name-emp-no--form-group__label">Name:</label>
+														<input type="text" class="name-emp-no--form-group__field form-control" />
+													</div>
+												</div>
+											</div>
+											<div class="employee-database--main__other-info">
+												<div class="other-info-line">
+													<div class="other-info-line--form-group form-group-inline">
+														<label for="" class="other-info-line--form-group__label">Position:</label>
+														<input type="text" class="other-info-line--form-group__field form-control" />
+													</div>
+													<div class="other-info-line--form-group form-group-inline">
+														<label for="" class="other-info-line--form-group__label">Contact Number:</label>
+														<input type="text" class="other-info-line--form-group__field form-control" />
+													</div>
+												</div>
+											</div>
+
+
+										</div>
 									</div>
 								</div>
 							</div>

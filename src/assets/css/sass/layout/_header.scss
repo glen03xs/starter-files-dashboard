@@ -89,6 +89,7 @@
 				margin-left: 10px;
 				margin-bottom: 0;
 				padding-left: 0;
+				align-items: center;
 
 				li {
 					line-height: 30px;
@@ -115,10 +116,16 @@
 		}
 
 		&__setttings-wrap {
-			button {
+			display: flex;
+			align-items: center;
+
+			.btn-header-settings {
 				border: none;
 				background: none;
 				outline: none;
+				display: flex;
+				padding: 5px;
+
 			}
 		}
 	}
