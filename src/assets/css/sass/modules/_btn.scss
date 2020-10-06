@@ -3,7 +3,19 @@
 * --------------------------------------------------------------------------------------*/
 
 .btn {
+	background: #1478D3;
+	border: none;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 12px 34px;
+	transition: all 0.2s ease-in;
 
+	&:hover {
+		background: #1262ac;
+		transition: all 0.2s ease-in
+	}
 }
 
 .btn-search {

@@ -65,6 +65,7 @@
 				}
 
 				&--btn-edit {
+					font-size: 14px;
 					position: absolute;
 					right: 0;
 					top: 0;
@@ -110,8 +111,9 @@
 					.profile-item__btn-view {
 						color: #fff;
 						background: #1478D3;
-						font-size: .90rem;
+						font-size: .75rem;
 						padding: 6px 12px;
+						cursor: pointer;
 
 						&:hover {
 							background: #1262ac;
@@ -146,8 +148,8 @@
 					&__preview {
 						background: url(../img/emp-thumb.jpg);
 						background-size: cover;
-						height: 150px;
-						width: 150px;
+						height: 140px;
+						width: 140px;
 					}
 
 					&__upload {
@@ -185,25 +187,145 @@
 				display: flex;
 				flex-wrap: wrap;
 				width: 64%;
+				flex-direction: column;
+    		justify-content: space-evenly;
 
 				&--form-group {
 					width: 100%;
 
+					.emp-no-label {
+						min-width: 118px;
+					}
 
+					input::-webkit-outer-spin-button,
+					input::-webkit-inner-spin-button {
+						-webkit-appearance: none;
+						margin: 0;
+					}
+					input[type=number] {
+						-moz-appearance: textfield;
+					}
 				}
 			}
 		}
 
 		&__other-info {
-			margin-top: 40px;
+			margin-top: 30px;
+			margin-bottom: 30px;
 
 			.other-info-line {
 				display: flex;
 				padding: 0 20px;
+				margin-bottom: 16px;
 
 				&--form-group {
-					padding-right: 30px;
+					padding-right: 26px;
 				}
+			}
+
+			.other-info-line {
+
+				div:last-child {
+					padding-right: 0;
+				}
+
+				&--form-group {
+
+								}
+			}
+
+			// Custome per line
+			.position-contact-no-line {
+
+				&--left {
+					width: 52%;
+				}
+				&--right {
+					width: 48%;
+
+					label {
+						min-width: 158px;
+					}
+				}
+			}
+
+			.gender-email-line {
+
+				&--left {
+					width: 44%;
+				}
+				&--right {
+					width: 56%;
+
+					label {
+						min-width: 142px;
+					}
+				}
+			}
+
+			.address-line {
+				&--single {
+					width: 100%;
+				}
+			}
+
+			.civil-status-dob-line {
+
+				&--left {
+					width: 50%;
+
+					label {
+						min-width: 108px;
+					}
+				}
+				&--right {
+					width: 50%;
+
+					label {
+						min-width: 118px;
+					}
+				}
+			}
+
+			.pob-doh-line {
+
+				&--left {
+					width: 56%;
+
+					label {
+						min-width: 124px;
+					}
+				}
+				&--right {
+					width: 44%;
+
+					label {
+						min-width: 104px;
+					}
+				}
+			}
+
+			.sss-philhealth-no-line {
+
+				&--left {
+					width: 50%;
+
+					label {
+						min-width: 118px;
+					}
+				}
+				&--right {
+					width: 50%;
+
+					label {
+						min-width: 128px;
+					}
+				}
+			}
+
+			.btn-wrap-line {
+				justify-content: flex-end;
+				margin-top: 40px
 			}
 		}
 	}
