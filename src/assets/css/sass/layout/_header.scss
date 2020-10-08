@@ -5,7 +5,7 @@
 	background: #fff;
 	height: 100px;
 	position: fixed;
-	width: calc(100% - 280px);
+	width: calc(100% - 250px);
 
 	&--top {
 		height: 60px;
@@ -32,7 +32,6 @@
 				margin-left: 10px;
 				position: relative;
 				width: 300px;
-
 			}
 		}
 
@@ -125,7 +124,6 @@
 				outline: none;
 				display: flex;
 				padding: 5px;
-
 			}
 		}
 	}

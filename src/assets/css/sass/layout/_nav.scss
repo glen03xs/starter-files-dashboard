@@ -6,7 +6,7 @@
 	position: fixed;
 	top: 0;
 	bottom: 0;
-	width: 280px;
+	width: 250px;
 
 	p,
 	a {
@@ -20,7 +20,7 @@
 		margin: 0;
 		padding-bottom: 1.875rem;
 		background-color: #222c3c;
-		overflow: auto;
+		overflow: hidden;
 		z-index: 10;
 	}
 }
@@ -43,9 +43,10 @@
 
 	h4 {
 		color: #7f8fa4;
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 		margin-left: 0;
-		padding-left: 14px;
+		padding-left: 10px;
+		margin-bottom: 0;
 	}
 
 	ul {
@@ -55,8 +56,8 @@
 	a {
 		display: flex;
 		align-items: center;
-		height: 42px;
-		padding-left: 28px;
+		height: 36px;
+		padding-left: 18px;
 
 		&.active {
 			background: #1d2531;
@@ -99,7 +100,7 @@
 }
 
 .menu-item-dashboard {
-	margin-bottom: 20px;
+	margin-bottom: 00px;
 
 	h4 {
 		margin-bottom: 0;
@@ -121,7 +122,7 @@
 			color: #909aa5;
 			height: 24px;
 			font-size: 15px;
-			margin-left: 44px;
+			margin-left: 30px;
 			padding-left: 12px;
 
 			&:hover {

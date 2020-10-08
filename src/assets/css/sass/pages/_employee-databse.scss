@@ -1,12 +1,11 @@
 .employee-database {
-
 	&--search-wrap {
 		width: 100%;
 		position: relative;
 	}
 
 	&--profile-list-wrap {
-		height: calc(100vh - 280px);
+		height: calc(100vh - 270px);
 		overflow: auto;
 		margin: 20px 0;
 
@@ -22,7 +21,7 @@
 	}
 
 	&--profile-item {
-		padding: 26px;
+		padding: 22px 26px;
 		border-bottom: 1px solid #d8dbe0;
 
 		&__head {
@@ -33,13 +32,14 @@
 			position: relative;
 
 			.profile-item {
-
 				&--img-wrap {
-					padding: 0 14px;
+					padding: 0 8px;
 					width: 30%;
 
 					img {
 						border-radius: 50%;
+						max-width: 90px;
+						width: 100%;
 					}
 				}
 
@@ -69,6 +69,15 @@
 					position: absolute;
 					right: 0;
 					top: 0;
+					background: none;
+					border: none;
+					color: #1478d3;
+					cursor: pointer;
+					outline: none;
+
+					&:hover {
+						color: #1262ac;
+					}
 				}
 			}
 		}
@@ -77,10 +86,9 @@
 			padding-top: 10px;
 
 			.profile-item {
-
 				&--secondary-details-wrap {
 					display: flex;
-					flex-wrap: wrap;
+					flex-wrap: nowrap;
 					position: relative;
 
 					p {
@@ -90,6 +98,8 @@
 
 				&--secondary-details-info-title {
 					width: 35%;
+					min-width: 116px;
+					min-height: 117px;
 
 					p {
 						font-weight: 600;
@@ -110,13 +120,28 @@
 
 					.profile-item__btn-view {
 						color: #fff;
-						background: #1478D3;
-						font-size: .75rem;
-						padding: 6px 12px;
+						background: #1478d3;
+						font-size: 0.65rem;
+						padding: 6px 10px;
 						cursor: pointer;
+						margin-right: 3px;
 
 						&:hover {
 							background: #1262ac;
+							transition: all 0.2s ease-in;
+						}
+					}
+
+					.profile-item__btn-delete {
+						border: none;
+						color: #fff;
+						background: #dc3545;
+						font-size: 0.65rem;
+						padding: 8px 10px;
+						cursor: pointer;
+
+						&:hover {
+							background: #a44c54;
 							transition: all 0.2s ease-in;
 						}
 					}
@@ -126,11 +151,11 @@
 	}
 
 	&--main {
-
 		&__profile-id-name-wrap {
 			display: flex;
-			margin-top: 24px;
-			padding: 0 60px;
+			margin: 24px auto 0;
+			padding: 0 20px;
+			max-width: 760px;
 
 			.profile-pic-upload {
 				width: 36%;
@@ -143,7 +168,6 @@
 
 				&--input {
 					position: relative;
-
 
 					&__preview {
 						background: url(../img/emp-thumb.jpg);
@@ -165,21 +189,20 @@
 						cursor: pointer;
 
 						i {
-							color: #B5B5C3 ;
+							color: #b5b5c3;
 							font-size: 14px;
 							padding: 4px 5px;
 						}
 
 						&:hover {
 							background: #e9e9e9;
-							transition: .2s all ease-in;
+							transition: 0.2s all ease-in;
 						}
 
-						input[type="file"] {
+						input[type='file'] {
 							display: none;
 						}
 					}
-
 				}
 			}
 
@@ -188,7 +211,7 @@
 				flex-wrap: wrap;
 				width: 64%;
 				flex-direction: column;
-    		justify-content: space-evenly;
+				justify-content: space-evenly;
 
 				&--form-group {
 					width: 100%;
@@ -202,7 +225,7 @@
 						-webkit-appearance: none;
 						margin: 0;
 					}
-					input[type=number] {
+					input[type='number'] {
 						-moz-appearance: textfield;
 					}
 				}
@@ -224,19 +247,16 @@
 			}
 
 			.other-info-line {
-
 				div:last-child {
 					padding-right: 0;
 				}
 
 				&--form-group {
-
-								}
+				}
 			}
 
 			// Custome per line
 			.position-contact-no-line {
-
 				&--left {
 					width: 52%;
 				}
@@ -250,7 +270,6 @@
 			}
 
 			.gender-email-line {
-
 				&--left {
 					width: 44%;
 				}
@@ -270,7 +289,6 @@
 			}
 
 			.civil-status-dob-line {
-
 				&--left {
 					width: 50%;
 
@@ -288,7 +306,6 @@
 			}
 
 			.pob-doh-line {
-
 				&--left {
 					width: 56%;
 
@@ -306,7 +323,6 @@
 			}
 
 			.sss-philhealth-no-line {
-
 				&--left {
 					width: 50%;
 
@@ -325,13 +341,8 @@
 
 			.btn-wrap-line {
 				justify-content: flex-end;
-				margin-top: 40px
+				margin-top: 40px;
 			}
 		}
 	}
-
-
-
 }
-
-
