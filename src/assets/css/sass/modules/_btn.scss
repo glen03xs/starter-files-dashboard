@@ -3,7 +3,7 @@
 * --------------------------------------------------------------------------------------*/
 
 .btn {
-	background: #1478D3;
+	background: #1478d3;
 	border: none;
 	outline: none;
 	color: #fff;
@@ -14,7 +14,17 @@
 
 	&:hover {
 		background: #1262ac;
-		transition: all 0.2s ease-in
+		transition: all 0.2s ease-in;
+	}
+}
+
+.btn-gray {
+	background: #ced0da;
+	color: #000;
+
+	&:hover {
+		background: #e6e6e7;
+		transition: all 0.2s ease-in;
 	}
 }
 
@@ -34,6 +44,10 @@
 	}
 }
 
-.btn-search-emp-database	{
+.btn-search-emp-database {
+}
 
+.btn-start-page {
+	margin-top: 26px;
+	width: 100%;
 }
